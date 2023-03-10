@@ -2,9 +2,10 @@
 name: build-test-deploy
 on: 
  pull_request:
-    type: opened
+    types: 
+     - opened
  workflow_dispatch:
- 
+
 jobs:
   test:
     needs: lint
